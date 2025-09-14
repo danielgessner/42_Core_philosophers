@@ -6,12 +6,14 @@
 /*   By: dgessner <dgessner@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/18 16:15:30 by dgessner          #+#    #+#             */
-/*   Updated: 2025/08/18 17:40:56 by dgessner         ###   ########.fr       */
+/*   Updated: 2025/09/14 13:21:22 by dgessner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PHILO_H
 # define PHILO_H
+
+# include <stdio.h>
 // **For each philosopher, consider:**
 // - What unique identifier?
 // - What timing information?
@@ -33,6 +35,11 @@ typedef struct s_philosopher
 
 typedef struct s_data  
 {
+    int		nphilos;
+	int		ttodie;
+	int		ttoeat;
+	int		ttosleep;
+	int		nmeals;
     // What shared information do all philosophers need?
     // What synchronization objects do you need?
 } t_data;
